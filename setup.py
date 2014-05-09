@@ -39,9 +39,15 @@ changes
     * getcwd(self) - return the current working directory on the remote
     * listdir(self, path='.')return a list of files for the given path
 
+* 0.2.3
+
+  * additions
+
+    * putfo(self, flo, remotepath=None) - Upload a file-like object
+
     """,
     platforms=['any'],
-    download_url='http://code.google.com/p/pysftp/',
+    download_url='https://github.com/standardtreasury/pysftp/tarball/0.2.3',
 
     # could also include long_description, download_url, classifiers, etc.
 )
