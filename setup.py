@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 setup(
     name = "pysftp",
-    version = "0.2.3",
+    version = "0.2.2.5",
     #packages = find_packages(),
     py_modules = ['pysftp'],
 
@@ -39,7 +39,7 @@ changes
     * getcwd(self) - return the current working directory on the remote
     * listdir(self, path='.')return a list of files for the given path
 
-* 0.2.3
+* 0.2.2.5
 
   * additions
 
@@ -47,7 +47,7 @@ changes
 
     """,
     platforms=['any'],
-    download_url='https://github.com/standardtreasury/pysftp/tarball/0.2.3',
+    download_url='https://github.com/standardtreasury/pysftp/tarball/0.2.2.5',
 
     # could also include long_description, download_url, classifiers, etc.
 )
