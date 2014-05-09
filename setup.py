@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 setup(
     name = "pysftp",
-    version = "0.2.2",
+    version = "0.2.3",
     #packages = find_packages(),
     py_modules = ['pysftp'],
 
@@ -34,7 +34,7 @@ changes
 * 0.2.2
 
   * additions
-  
+
     * chdir(self, path) - change the current working directory on the remote
     * getcwd(self) - return the current working directory on the remote
     * listdir(self, path='.')return a list of files for the given path
