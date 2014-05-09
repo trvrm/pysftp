@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 setup(
     name = "pysftp",
-    version = "0.2.2",
+    version = "0.2.2.5",
     #packages = find_packages(),
     py_modules = ['pysftp'],
 
@@ -34,14 +34,20 @@ changes
 * 0.2.2
 
   * additions
-  
+
     * chdir(self, path) - change the current working directory on the remote
     * getcwd(self) - return the current working directory on the remote
     * listdir(self, path='.')return a list of files for the given path
 
+* 0.2.2.5
+
+  * additions
+
+    * putfo(self, flo, remotepath=None) - Upload a file-like object
+
     """,
     platforms=['any'],
-    download_url='http://code.google.com/p/pysftp/',
+    download_url='https://github.com/standardtreasury/pysftp/tarball/0.2.2.5',
 
     # could also include long_description, download_url, classifiers, etc.
 )
