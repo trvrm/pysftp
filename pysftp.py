@@ -73,7 +73,10 @@ class Connection(object):
             try:  #try rsa
                 xSx_key = paramiko.RSAKey.from_private_key_file(private_key_file,private_key_pass)
             except paramiko.SSHException:   #if it fails, try dss
-                xSx_key = paramiko.DSSKey.from_private_key_file(private_key_file,password=private_key_pass)
+                try: #try dss
+                    xSx_key = paramiko.DSSKey.from_private_key_file(private_key_file,password=private_key_pass)
+                except paramiko.SSHException: #try ecdsa
+                    xSx_key = paramiko.ECDSAKey.from_private_key_file(private_key_file,password=private_key_pass)
             self._transport.connect(username = username, pkey = xSx_key)
 
     def _sftp_connect(self):
